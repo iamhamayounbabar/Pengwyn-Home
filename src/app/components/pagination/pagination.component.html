@@ -1,0 +1,28 @@
+<div class="row mt-4">
+    <div class="col-md-12 text-white d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+            <p class="my-auto ms-auto">Go to page</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-outline mx-3" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown">{{currentPage}}</button>
+                <ul class="dropdown-menu bg_semi_transparent" aria-labelledby="dropdownMenuButton2" style="z-index: 999999999 !important; background-color: black !important;">
+                    <li *ngFor="let p of [].constructor(totalPages);let i = index;" (click)="btnJump(totalPages - i)"><a
+                            class="dropdown-item pointer text-center" style="color: #F4BB03 !important;">Page {{totalPages - i}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between text-white align-items-center">
+            <img src="assets/images/pagination-left.svg" class="pointer" style="height: 5.5vh; margin-right: 1vh;" (click)="btnBack()"
+                alt="">
+            <button *ngFor="let p of getPages(); let i = index" type="button" (click)="btnJump(p)"
+                class=" me-2 btn btn-outline {{p === currentPage ? 'selected' : ''}}">{{p}}</button>
+            <button type="button" *ngIf="currentPage < (totalPages - 1)" style="width: 46px;"
+                class="btn btn-outline me-2">....</button>
+            <button type="button"
+                class="btn btn-outline me-2 {{currentPage === totalPages ? 'selected' : ''}}">{{totalPages}}</button>
+            <img src="assets/images/pagination-right.svg" class="pointer" style="height: 5.5vh; margin-right: 1vh;" (click)="btnNext()"
+                alt="">
+        </div>
+        <p class="my-auto">{{showingRecords}} showing out of {{totalRecords}} results</p>
+    </div>
+</div>

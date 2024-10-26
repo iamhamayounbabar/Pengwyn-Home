@@ -1,0 +1,50 @@
+@media (width < 822px) {
+    .sm-logo-height {
+        height: 35vw !important;
+    }
+
+    .sm-right {
+        right: 13vw !important;
+    }
+}
+
+/* @media (width < 391px){
+    .sm-right{
+        right: 5vh !important;
+    }
+} */
+
+
+.active {
+    color: #F4BB03 !important;
+    /* Color for active navbar link */
+}
+
+.text-hover:hover{
+    color: #F4BB03 !important;
+}
+
+@media (width > 3500px){
+    .logo-height{
+        height: 75vh !important;
+    }
+}
+
+.indicator {
+    display: block;
+    height: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.active-indicator {
+    border-bottom: .4vh dotted #F4BB03;
+}
+
+.menu{
+    background-color: rgba(3, 3, 4, 1);
+    width: 102vw;
+    height: 100vh;
+    padding: 6vw;
+    z-index: 99999999;
+}

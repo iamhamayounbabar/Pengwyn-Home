@@ -1,0 +1,106 @@
+<div class="container-fluid">
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 0; right: 0vh;"></div>
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 80vh; right: 0vh;"></div>
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 200vh; left: -20vh;"></div>
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 150vh; left: 90vh;"></div>
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 260vh; left: 0vh;"></div>
+    <div class="row sm-pt-3" style="padding-top: 10vh;">
+        <div class="col-md-11 mx-auto ">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-7 col-11 ">
+                    <div class="d-flex sm-grid">
+                        <div>
+                            <h5 class="m-0" style="font-size: 1.4vw; margin-right: 1vh !important; ">Pengwyn BINC Rarity
+                                Tool
+                            </h5>
+                        </div>
+                        <div>
+                            <h5 class="text-orange sm-mt-1 text-start m-0" style="font-size: 1.4vw">
+                                (147 Pengwyn NFTs meet your criteria)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 sm-mt-5">
+                    <div class="row">
+                        <div class="col-md-8 position-relative">
+                            <input type="text" class="form-control "
+                                placeholder="Search by id or name or wallet address">
+                                <img src="assets/images/search-icon.svg" style="bottom: 1.5vh; right: 3vh; height: 3vh;" class="position-absolute" alt="">
+                        </div>
+                        <div class="col-md-4 sm-mt-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Sort by</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="" style="border: .2vh dashed rgba(244, 187, 3, 0.25);">
+        </div>
+    </div>
+    <div class="row" *ngIf="filteredItems.length > 0">
+        <div class="col-md-11 mx-auto d-flex align-items-center" style="height: 6vh;">
+            <img src="assets/images/left-arrow.svg" style="height: 4vh; margin-left: 3vh;" *ngIf="filteredItems.length != 0" class="pointer d-none d-md-block" (click)="moveLeft()">
+            <div #chips class="d-flex gap-1vw chips" style="width: 72vw; overflow-x: scroll; margin-left: 1vw;">
+                <div class="d-flex gap-1vw align-items-center" style="text-wrap: nowrap;" *ngFor="let selected of filteredItems">
+                    <span class="text-secondary">{{selected}}</span>
+                    <img src="assets/images/cross-icon.svg" class="pointer sm-h"
+                        style="height: .8vw;" (click)="addRemove(selected)">
+                </div>
+            </div>
+            <img src="assets/images/right-arrow.svg" style="height: 4vh; margin-left: 2vh;" *ngIf="filteredItems.length != 0" class="pointer d-none d-md-block" (click)="moveRight()">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 4vh;">
+        <div class="col-md-11 mx-auto">
+            <div class="row">
+                <div class="col-md-3">
+                    <app-filter [filterItems]="filterItems" (onchange)="filtersUpdated($event)"></app-filter>
+                </div>
+                <div class="col-md-9 position-relative">
+                <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 30vh; right: 0vh;"></div>
+                <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 250vh; left: 0vh;"></div>
+                <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 550vh; right: 0vh;"></div>
+                <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 920vh; left: 0vh;"></div>
+                <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 1080vh; right: 0vh;"></div>
+                    <div class="row">
+                        <div class="col-md-3" *ngFor="let data of rarityPengwyn" style="margin-bottom: 3vh; padding-right: .5vh;" routerLink="/details">
+                            <div class="box1 pointer" >
+                                <div class="box2 position-relative">
+                                    <img src={{data.img}} class="w-100" alt="">
+                                    <a href="http://www.example.com" target="_blank"><img src={{data.icon}} class="position-absolute sm-icon-h pointer"
+                                        style="height: 4vh; right: 1vh; top: 1vh;" alt=""></a>
+                                </div>
+                                <div class="sm-small-text sm-p-2 text-center" >
+                                    <small class="text-white">{{data.name}}</small>
+                                </div>
+                                <hr class="m-0" style="border: .2vh dashed rgba(244, 187, 3, 0.25);">
+                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 1vh;">
+                                    <button class="btn btn-outline btn-outline2">{{data.btn1}}</button>
+                                    <div>
+                                        <small class="text-rank" style="margin-right: 1vh;">{{data.text}}</small>
+                                        <small class="sm-text">{{data.numb}}</small>
+                                    </div>
+                                </div>
+                                <hr class="mb-0 mt-0"
+                                    style="margin-top: 1vh !important; border: .2vh dashed rgba(244, 187, 3, 0.25) ;">
+                                    <div class="text-center">
+                                        <small class="mb-0 sm-text-2 {{data.value !== 'Not for sale' ? 'text-orange' : ''}}" >{{data.value}}</small>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <app-pagination></app-pagination>
+                    </div>
+                    <div class="d-block d-md-none" style="margin-top: 4vh;">
+                        <button class="btn btn-Primary-Orange w-100">Load more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

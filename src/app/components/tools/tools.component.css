@@ -1,0 +1,254 @@
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+.box-1 {
+  height: 29vh;
+  border-radius: .7vw;
+  background-color: rgba(147, 147, 147, 0.1);
+  border: 1px solid rgba(147, 147, 147, 0.1);
+}
+
+.box-2 {
+  height: 45vh;
+  border-radius: .7vw;
+  background-color: rgba(147, 147, 147, 0.1);
+  border: 1px solid rgba(147, 147, 147, 0.1);
+}
+
+.img-box {
+  border-radius: .7vw;
+  background-color: rgba(147, 147, 147, 0.1);
+  border: 1px solid rgba(147, 147, 147, 0.1);
+}
+
+.l-height h1 {
+  margin: 0;
+  line-height: 5vw;
+  font-size: 4vw !important;
+}
+
+.l-height h6 {
+  margin: 0;
+  font-size: .8vw !important;
+}
+
+
+.content { white-space: pre-line; }
+
+@media (width > 822px) {
+  .pd-md{
+    padding-left: 0vh !important;
+    padding-right: 5vh !important;
+  }
+}
+
+@media (width < 822px) {
+  .pd-sd {
+    padding-right: 3vh !important;
+  }
+
+  .text-size-h6 h6 {
+    font-size: 3vw !important;
+    text-align: center !important;
+  }
+
+  #carousel1>.carousel {
+    height: 125vw !important;
+  }
+
+  .sm-m-top {
+    margin-top: 5vh !important;
+  }
+
+  .sm-mt--10 {
+    margin-top: -10vh !important;
+  }
+
+
+  .sm-mt-17 {
+    margin-top: 17vh !important;
+  }
+
+  .sm-mt-10 {
+    margin-top: 10vh !important;
+  }
+
+  .sm-mt--17 {
+    margin-top: -17vw !important;
+  }
+
+  .sm-mt-5 {
+    margin-top: 5vw !important;
+  }
+
+  .sm-mt--5 {
+    margin-top: -10vw !important;
+  }
+
+  .sm-img-h3 {
+    height: 10vh !important;
+    left: 0 !important;
+  }
+
+  .sm-mt-0 {
+    margin-top: 0 !important;
+  }
+
+  .text-size-h6 h1 {
+    font-size: 8.5vw !important;
+    text-align: center;
+    line-height: 5vh !important;
+  }
+
+  .box-1 {
+    height: 23vh !important;
+    border-radius: 3vw !important;
+    background-color: rgba(147, 147, 147, 0.1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+  }
+
+  .box {
+    width: 27vw !important;
+    height: 23vw !important;
+    padding: 1vh !important;
+    border-radius: 2vw !important;
+  }
+
+  .sm-text-span span {
+    font-size: 6vw !important;
+  }
+
+  .sm-text-span p {
+    font-size: 4.5vw !important;
+  }
+
+  .img-h2 {
+    height: 10vh !important;
+  }
+
+  .img-13 {
+    margin-top: -13vh !important;
+  }
+
+  .sm-box {
+    height: 110vw !important;
+    border-radius: 3vw !important;
+    background-color: rgba(147, 147, 147, 0.1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+  }
+
+  /* .carousel-dot {
+        width: 8px !important;
+        height: 8px !important;
+        background: rgba(147, 147, 147, 0.1);
+        border: none !important;
+    } */
+
+  .img-box {
+    border-radius: 4vw !important;
+    background-color: rgba(147, 147, 147, 0.1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+  }
+
+  /* .carousel-dot-active {
+        background: var(--primary-orange) !important;
+    } */
+
+  .sm-top-padding {
+    padding-top: 15vh;
+  }
+
+  span {
+    font-size: 3.6vw !important;
+    font-family: 'GilroyBold';
+  }
+
+  .sm-pt-40 {
+    margin-top: 40vh;
+  }
+
+  .btn-outline {
+    color: var(--primary-orange);
+    border-radius: 2vw !important;
+    border: 0.14vw solid var(--primary-orange);
+    font-size: 2.5vw !important;
+    padding: 3vw 1.5vw !important;
+    font-family: 'Gilroy';
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 6.7vw !important;
+  }
+
+  .sm-pt-30 {
+    margin-top: 30vh !important;
+  }
+
+  small {
+    font-size: 3.6vw !important;
+  }
+
+  .sm-pt-20 {
+    margin-top: 20vh;
+  }
+
+  .sm-pt-50 {
+    margin-top: 50vh;
+  }
+
+  .sm-mx-auto {
+    margin: auto !important;
+    text-align: center !important;
+  }
+
+  h3 {
+    font-size: 6vw !important;
+  }
+
+  .sm-w {
+    width: 14vw !important;
+    padding: 2vw !important;
+    border-radius: 1vh !important;
+  }
+
+  .sm-text-size span {
+    font-size: 4.5vw !important;
+  }
+
+  .img-h {
+    height: 5vh !important;
+  }
+}
+
+/* Apply the animation to the element */
+.slide-img {
+  animation: slideLeftToRight 2s linear infinite alternate;
+  /* 4s duration, linear easing, infinite loop */
+}
+
+.slide-img-2 {
+  animation: slideRightToLeft 4s linear infinite alternate;
+  /* 4s duration, linear easing, infinite loop */
+}
+
+/* Define the animation */
+@keyframes slideLeftToRight {
+  0% {
+      transform: translateX(-10%); /* Start position is left */
+  }
+  100% {
+      transform: translateX(10%); /* End position is right */
+  }
+}
+
+/* Define the animation for right-to-left */
+@keyframes slideRightToLeft {
+  0% {
+      transform: translateY(0%); /* Start position is right */
+  }
+  100% {
+      transform: translateY(-100%); /* End position is left */
+  }
+}
+

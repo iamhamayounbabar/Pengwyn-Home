@@ -1,0 +1,197 @@
+<div class="container-fluid">
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 0; right: 0vh;"></div>
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 150vh; left: 90vh;"></div>
+    <div class="bg-circle d-none d-md-block position-absolute" style="top: 160vh; left: 0vh;"></div>
+    <div class="row" style="margin-top:10vh ;">
+        <div class="col-md-11 mx-auto">
+            <div class="row">
+                <div class="col-md-4 position-relative">
+                    <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 100vh; right: 0vh;"></div>
+                    <div class="box1">
+                        <div class="box2">
+                            <img src="assets/images/profile-img.svg" class="sm-h-img w-100" alt="">
+                        </div>
+                        <div class="text-center" style="margin-top: 2vh;">
+                            <h5>Zombie Pengwyn #100</h5>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Collection</span>
+                            <span class="text-orange">Waddle</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Class</span>
+                            <span class="text-orange">Zombie</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Rarity Rank</span>
+                            <span class="text-orange">400 / 2500</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Rank status</span>
+                            <span class="text-orange">Level 3</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Share power in Pengwyn BINC</span>
+                            <span class="text-orange">0.0025%</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Book Value</span>
+                            <span class="text-orange">240 ICX</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Monthly BINC earning</span>
+                            <span class="text-orange">145 ICX</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Total BINC earning</span>
+                            <span class="text-orange">300 ICX</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Network</span>
+                            <span class="text-orange">ICON Blockchain</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Owned by</span>
+                            <span class="text-orange">hx35a5.....fb8d5 <img src="assets/images/copy-icon.svg"
+                                    style="margin-left: 1vw;" alt=""></span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">NFT ID</span>
+                            <span class="text-orange">745</span>
+                        </div>
+                        <div class="rect d-flex justify-content-between mx-auto" style="margin-top: 1vh;">
+                            <span class="text-secondary">Price</span>
+                            <span class="text-orange">400 ICX</span>
+                        </div>
+                        <div class="mx-auto" style=" margin-top: 2vh;">
+                            <button class="btn btn-Primary-Orange w-100">Buy on Craft Network</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8" style="margin-top: 2vh;">
+                    <div (click)="toggleIcons1()" class="d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Attributes (9)</h4>
+                        <img *ngIf="show_up_icon1" src="assets/images/down-arrow-chevron.svg" class="btn_circle pointer sm-img-h20"
+                            style="border-radius: 8vW !important; border: 1px solid rgba(244, 187, 3, 0.25) !important; padding: 1.5vh; height: 2.5vw; width: 2.5vw;"
+                            data-bs-toggle="collapse" data-bs-target="#collapseApp1" aria-expanded="true"
+                            aria-controls="collapseApp1" width="35" height="35" alt="">
+                        <img *ngIf="!show_up_icon1" src="assets/images/up-arrow-chevron.svg" class="btn_circle pointer sm-img-h20"
+                            style="border-radius: 8vW !important; border: 1px solid rgba(244, 187, 3, 0.25) !important; padding: 1.5vh; height: 2.5vw; width: 2.5vw;"
+                            data-bs-toggle="collapse" data-bs-target="#collapseApp1" aria-expanded="true"
+                            aria-controls="collapseApp1" width="35" height="35" alt="">
+                    </div>
+                    <hr class="mb-0" style="border: .2vh dashed rgba(244, 187, 3, 0.25);">
+                    <div class="collapse pt-3 show" id="collapseApp1">
+                        <div class="row justify-content-between position-relative" style="margin-top: 2vh;">
+                        <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 120vh; left: 0vh;"></div>
+                            <div class="col-md-4 sm-p-3" *ngFor="let data of attributes" style="padding: .5vw;">
+                                <div class="box3">
+                                    <div class=" d-flex justify-content-between">
+                                        <small>{{data.background}}</small>
+                                        <small>{{data.percentage}}</small>
+                                    </div>
+                                    <div class="d-flex justify-content-between" style="margin-top: 1vh;">
+                                        <h6 class="text-orange">{{data.option}}</h6>
+                                        <h6 class="text-orange">{{data.value}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 4vw;">
+                        <div class="col-12">
+                            <div (click)="toggleIcons2()" class="d-flex align-items-center justify-content-between">
+                                <h4 class="m-0">Transaction history</h4>
+                                <img *ngIf="show_up_icon2" src="assets/images/down-arrow-chevron.svg" class="btn_circle pointer sm-img-h20"
+                                    style="border-radius: 8vW !important; border: 1px solid rgba(244, 187, 3, 0.25) !important; padding: 1.5vh; height: 2.5vw; width: 2.5vw;"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseApp" aria-expanded="true"
+                                    aria-controls="collapseApp" width="35" height="35" alt="">
+                                <img *ngIf="!show_up_icon2" src="assets/images/up-arrow-chevron.svg" class="btn_circle pointer sm-img-h20"
+                                    style="border-radius: 8vW !important; border: 1px solid rgba(244, 187, 3, 0.25) !important; padding: 1.5vh; height: 2.5vw; width: 2.5vw;"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseApp" aria-expanded="true"
+                                    aria-controls="collapseApp" width="35" height="35" alt="">
+                            </div>
+                            <hr class="mb-0" style="border: .2vh dashed rgba(244, 187, 3, 0.25);">
+                            <div class="collapse pt-3 show" id="collapseApp">
+                                <div class="row">
+                                    <div class="col-12 d-none d-md-block">
+                                        <table class="table text-white">
+                                            <thead class="text-secondary">
+                                                <tr style="font-size: 2vh;">
+                                                    <th class="ps-3">Type</th>
+                                                    <th class="ps-3">From</th>
+                                                    <th class="ps-3">To</th>
+                                                    <th class="ps-3">price</th>
+                                                    <th class="ps-2">BINC earnings</th>
+                                                    <th class="ps-2">date</th>
+                                                    <th class="ps-2">Tx hash</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let data of history" style="font-size: 2vh;">
+                                                    <td style="padding-top: .9vw !important;">{{data.type}}</td>
+                                                    <td style="padding-top: .9vw !important;">{{data.from}}</td>
+                                                    <td style="padding-top: .9vw !important;">{{data.to}}</td>
+                                                    <td style="padding-top: .9vw !important;" class="text-orange">{{data.price}}
+                                                    </td>
+                                                    <td style="padding-top: .9vw !important;">{{data.binc}}</td>
+                                                    <td style="padding-top: .9vw !important;" class="text-secondary">{{data.date}}</td>
+                                                    <td style="padding-top: .9vw !important;">{{data.txHash}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-12 d-block d-md-none">
+                                        <div class="box5" *ngFor="let data of history" style="margin-top: 4vw;">
+                                            <div style="padding: 2vh;">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Date</span>
+                                                    <span >Tx hash</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between" style="margin-top: 1vh;">
+                                                    <h6 style="color: rgba(154, 154, 154, 1);">{{data.date}}</h6>
+                                                    <h6>{{data.txHash}}</h6>
+                                                </div>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div style="padding: 2vh;">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>From</span>
+                                                    <span>To</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between" style="margin-top: 1vh;">
+                                                    <h6>{{data.from}}</h6>
+                                                    <h6>{{data.to}}</h6>
+                                                </div>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div style="padding: 2vh;">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Type</span>
+                                                    <span class="ms-2">Price</span>
+                                                    <span>BINC earnings</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between" style="margin-top: 1vh;">
+                                                    <h6>{{data.type}}</h6>
+                                                    <h6 class="text-orange">{{data.price}}</h6>
+                                                    <h6>{{data.binc}}</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-none d-md-block">
+                                    <app-pagination></app-pagination>
+                                </div>
+                                <div class="d-block d-md-none position-relative" style="margin-top: 3vh;">
+                                    <button class="btn btn-Primary-Orange w-100">Load more</button>
+                                    <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 60vh; right: 0vh;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

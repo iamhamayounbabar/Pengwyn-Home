@@ -1,0 +1,393 @@
+<div class="container-fluid pd-md pd-sd">
+    <div class="row">
+        <div class="d-flex position-relative">
+            <div class="col-md-8 ms-auto sm-text-center sm-l-height text-orange"
+                style="margin-top: 8vh;">
+                <h1 class="fw-bold letter-spacing mb-0" style="margin-top:1vh;">PENGWYN BINC</h1>
+                <h1 class="fw-bold letter-spacing m-0">MANAGEMENT TOOLS</h1>
+                <h6 class="text-white mb-0" style="margin-top: 1vh; color: rgba(154, 154, 154, 1) !important;">Pengwyn BINC is building the 
+                    <span class="text-orange">WEB 3.0</span> company platform that
+                    introduces various tools designed to incentivize shareholders to audit funds, actively participate
+                    in
+                    decision-making, and earn active income through the platform's management tools on 
+                    <span class="text-orange"> Pengwyn DAPP.</span>  </h6>
+            </div>
+            <div class="col-md-3 text-end sm-mt-0" style="margin-top: 8vh;">
+                <div class="d-none d-md-block">
+                    <img src="assets/images/tool-img-1.svg" class="slide-img" style="height:15vw; margin-right: 0;" alt="">
+                    <div class="bg-circle d-none d-md-block position-absolute" style="top: 20vh; right: 0vw;">
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/tool-img-1.svg" class="d-block d-md-none position-absolute"
+                style="height:15vw; right: -18px;" alt="">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10vh;">
+        <div class="col-md-10 mx-auto">
+            <div class="position-relative d-none d-md-block" style="left: -22vh; top: 15vh;">
+                <img src="assets/images/tool-img-2.png" class="position-absolute slide-img-2" style="z-index: -9999; height: 25vh;"
+                    alt="">
+                <div class="bg-circle d-none d-md-block position-absolute" style="top: 0vh; left: -15vw;">
+                </div>
+            </div>
+            <div class="position-relative d-block d-md-none" style="left: -8vh; top: -10vh;">
+                <img src="assets/images/tool-img-2.png" class="position-absolute" style="z-index: -9999999; height: 15vh;"
+                    alt="">
+            </div>
+            <div class="d-block d-md-none d-flex">
+                <carousel [cellsToShow]="1.3" [height]="220" [arrows]="false" [dots]=" false">
+                    <div *ngFor="let data of toolBox" #cell class="carousel-cell" style="z-index: 999999 !important;">
+                        <div class="col-md-3 box-1 sm-mt-5 text-center"
+                            style=" border-radius: .8vw; padding: 3vw; padding-bottom: 0vh; border: 1px solid rgba(147, 147, 147, 0.1);">
+                            <div class="mx-auto sm-w"
+                                style="background-color: rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                <img src={{data.img}} class="img-h" style="height: 3vw;" alt="">
+                            </div>
+                            <div class="sm-text-size" style="padding-top: 3vh;">
+                                <span class="fw-bold text-center sm-text">{{data.header}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </carousel>
+            </div>
+            <div class="d-none d-md-block">
+                <div class="row justify-content-between">
+                    <div class="col-md-3" *ngFor="let data of toolBox" style="padding-left: .5vw;">
+                        <div class="box-1 box text-center"
+                            style=" border-radius: .8vw; padding: 2vw; border: 1px solid rgba(147, 147, 147, 0.1);">
+                            <div class="mx-auto"
+                                style="background-color: rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw; border: 1px solid rgba(147, 147, 147, 0.1);">
+                                <img src={{data.img}} class="img-h" style="height: 3vw;" alt="">
+                            </div>
+                            <div style="padding-top: 3vh;">
+                                <span class="fw-bold text-center sm-text content">{{data.header}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row " >
+        <div class="col-md-11 mx-auto">
+            <div class="row justify-content-between sm-m-top" style="margin-top: 20vh;">
+                <div class="col-md-6 img-box d-block d-md-none position-relative img-box mt-5">
+                    <img src="assets/images/pengwynorganization-img.svg" class="w-100 sm-mt--10" style="margin-top: -5vw;"
+                        alt="">
+                    <div class="bg-circle d-none d-md-block position-absolute" style="bottom: 10vh; right: 5vw;">
+                    </div>
+                    <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: -10vh; right: 0vh;"></div>
+                </div>
+                <div class="col-md-6 sm-mx-auto position-relative" style="padding-top: 3vh;">
+                    <h3 class="text-orange">Pengwyn Autonomous Organization</h3>
+                    <span class="text-secondary">Pengwyn Autonomous Organization (PAO) serves as a voting tool that
+                        automates withdrawals from the PAO Vault with the approval of Pengwyn BINC shareholders. PAO
+                        tool facilitates the decision-making process regarding expenditures within the organization.
+                        <br> <br> To
+                        use the collateralized funds in PAO Vault, the team is required to create detailed
+                        submissions
+                        that clarifies the purpose of the expenditure and the necessary capital amount.</span>
+                    <div class="bg-circle d-none d-md-block position-absolute" style="bottom: -15vh; left: -15vw;">
+                    </div>
+                    <div class="row sm-m-top" style="margin-top: 8vh;">
+                        <div class="col-md-5">
+                            <a href="https://pengwyn-binc.gitbook.io/pengwyn-binc-white-paper/pengwyn-binc-white-paper/management-tools/pengwyn-autonomous-organization-pao" target="_blank">
+                                <button class="btn btn-outline w-75">Explore how it works</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 img-box d-none d-md-block position-relative img-box">
+                    <img src="assets/images/pengwynorganization-img.svg" class="w-100" style="margin-top: -5vw;" alt="">
+                    <div class="bg-circle d-none d-md-block position-absolute" style="top: -20vh; right: 0vw;">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between sm-m-top" style="margin-top: 20vh;">
+                <div class="col-md-6 img-box d-block d-md-none position-relative img-box">
+                    <img src="assets/images/pengwynstats-img.png" class="w-100 sm-mt--17" style="margin-top: -5vw;" alt="">
+                    <div class="bg-circle d-none d-md-block position-absolute" style="bottom: 10vh; right: 5vw;">
+                    </div>
+                    <div class="bg-circle d-none d-md-block position-absolute" style="bottom: 10vh; right: 5vw;">
+                    </div>
+                </div>
+                <div class="col-md-6 img-box d-none d-md-block position-relative img-box">
+                    <img src="assets/images/pengwynstats-img.png" class="w-100 " style="margin-top: -9vw;" alt="">
+                    <div class="bg-circle d-none d-md-block position-absolute" style="bottom: 0vh; left: -15vw;">
+                    </div>
+                </div>
+                <div class="col-md-5 sm-mx-auto position-relative" style="padding-top: 3vh;">
+                    <h3 class="text-orange">Pengwyn Stats</h3>
+                    <span class="text-secondary">Pengwyn Stats is a comprehensive value dashboard that is designed
+                        to
+                        demonstrate various valuations of Pengwyn BINC NFTs and offers additional financial data for
+                        the
+                        shareholders of the company. <br> <br> By prioritizing transparency and implementing
+                        different
+                        measures,
+                        Pengwyn BINC enables a secure investment and trading experience within the NFT
+                        ecosystem.</span>
+                    <div class="row sm-m-top" style="margin-top: 8vh;">
+                        <div class="col-md-4 position-relative">
+                            <a href="https://pengwyn-binc.gitbook.io/pengwyn-binc-white-paper/pengwyn-binc-white-paper/management-tools/stats" target="_blank">
+                                <button class="btn btn-outline w-75">Learn more</button>
+                            </a>
+                            <div class="bg-sm-circle position-absolute d-block d-md-none"
+                                style="bottom: 0vh; left: 10vh;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between sm-mt-17" style="margin-top: 20vh;">
+                <div class="col-md-6 img-box d-block d-md-none position-relative img-box">
+                    <img src="assets/images/pengwynSalesForcep-img.svg" class="w-100 img-13" style="margin-top: -5vw;"
+                        alt="">
+                </div>
+                <div class="col-md-6 sm-mx-auto position-relative" style="padding-top: 3vh;">
+                    <h3 class="text-orange">Pengwyn Sales Force Program</h3>
+                    <span class="text-secondary">The Pengwyn Sales Force Program (PSFP) is an active income tool
+                        that
+                        empowers Pengwyn BINC NFT owners to act as intermediaries in the Pengwyn Waddle NFT
+                        Collection
+                        and partner projects' mint sales. <br> <br>
+
+                        To engage in mints and sales, NFT owners can generate promotion codes that grant mint rights
+                        and
+                        discounts for investors of specific projects.</span>
+                    <div class="row sm-m-top" style="margin-top: 8vh;">
+                        <div class="col-md-5">
+                            <a href="https://pengwyn-binc.gitbook.io/pengwyn-binc-white-paper/pengwyn-binc-white-paper/management-tools/pengwyn-sales-force-program-psfp" target="_blank">
+                                <button class="btn btn-outline w-75">Explore how it works</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 img-box d-none d-md-block position-relative img-box">
+                    <img src="assets/images/pengwynSalesForcep-img.svg" class="w-100" style="margin-top: -9vw;"
+                        alt="">
+                </div>
+            </div>
+            <div class="row justify-content-between sm-m-top" style="margin-top: 20vh;">
+                <div class="col-md-6 img-box d-block d-md-none position-relative img-box sm-mt-5">
+                    <img src="assets/images/pengwynSuggestionVotings-img.svg" class="w-100 sm-mt--5"
+                        style="margin-top: -5vw;" alt="">
+                    <div class="bg-circle d-none d-md-block position-absolute" style="bottom: 10vh; right: 5vw;">
+                    </div>
+                </div>
+                <div class="col-md-6 img-box d-none d-md-block position-relative img-box">
+                    <img src="assets/images/pengwynSuggestionVotings-img.svg" class="w-100"
+                        style="margin-top: -5vw;" alt="">
+                </div>
+                <div class="col-md-5 sm-mx-auto position-relative" style="padding-top: 3vh;">
+                    <h3 class="text-orange">Pengwyn </h3>
+                    <h3 class="text-orange">Suggestion Votings</h3>
+                    <span class="text-secondary">Pengwyn Suggestion is an on-chain voting tool that empowers Pengwyn BINC shareholders to propose suggestions and enables the community to vote on these ideas. <br><br> This tool is a crucial component of Pengwyn BINC's decentralization efforts as it provides valuable insights into the community's expectations.</span>
+                    <div class="bg-circle d-none d-md-block position-absolute" style="bottom: -15vh; right: -8vw;">
+                    </div>
+                    <div class="row sm-m-top" style="margin-top: 8vh;">
+                        <div class="col-md-4">
+                            <a href="https://pengwyn-binc.gitbook.io/pengwyn-binc-white-paper/pengwyn-binc-white-paper/management-tools/pengwyn-suggestion-votings" target="_blank">
+                                <button class="btn btn-outline w-75">Learn more</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row position-relative sm-m-top" style="margin-top: 20vh;">
+        <div class="col-md-6 mx-auto text-center">
+            <h2 class="text-orange">Upcoming Pengwyn BINC tools and products</h2>
+            <span class="text-secondary">Pengwyn BINC is working on range of tools and products that focus on utilities and revenue
+                streams.
+                Each development target is designed to foster decentralization within the project while
+                simultaneously
+                creating long-term value for the company and its shareholders. <br><br>
+                Pengwyn BINC has outlined several planned developments for the future of the project.</span>
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <a href="https://pengwyn-binc.gitbook.io/pengwyn-binc-white-paper/pengwyn-binc-white-paper/fields-of-operations" target="_blank">
+                        <button class="btn btn-outline w-100" style="margin-top: 5vh;">Learn more about upcoming tools and
+                        products</button>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-circle d-none d-md-block position-absolute" style="top: 50vh; left: -5vw;">
+            </div>
+            <div class="bg-circle d-none d-md-block position-absolute" style="top: 105vw; left: -5vw;">
+            </div>
+            <div class="bg-circle d-none d-md-block position-absolute" style="top: 105vw; left: 30vw;">
+            </div>
+            <div class="bg-sm-circle position-absolute d-block d-md-none" style="bottom: -20vh; right: 0vh;"></div>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 8vh;">
+        <div class="col-md-10 mx-auto ">
+            <div class="d-block d-md-none d-flex"id="carousel1">
+                <carousel [cellsToShow]="1" [arrows]="false" [dots]=" true">
+                    <div *ngFor="let data of productBox" #cell class="carousel-cell">
+                        <div class="col-md-3">
+                            <div class="box-2 sm-box sm-mt-5 text-center"
+                                style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1);">
+                                <div class="mx-auto box"
+                                    style="background-color: rgba(147, 147, 147, 0.1); border-radius: .8vw; padding: 1vw;">
+                                    <img src={{data.img}} class="w-100" alt="">
+                                </div>
+                                <div class="sm-text-span" style="padding-top: 3vh;">
+                                    <span class="fw-bold text-center sm-text">{{data.header1}}</span><br>
+                                    <span class="fw-bold text-center sm-text">{{data.header2}}</span><br>
+                                    <p class="m-0" style="padding-top: 2vh;">{{data.detail}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </carousel>
+            </div>
+            <div class="d-none d-md-block">
+                <div class="row">
+                    <div class="col-3" style="padding-left: .7vw;">
+                        <div class="box-2 box sm-mt-5 text-center"
+                            style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1); padding-top: 4vh;">
+                            <div class="mx-auto"
+                                style="background-color: rgba(147, 147, 147, 0.1);border: 1px solid rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                <img src="assets/images/file-icon.svg" class="img-h" style="height: 3vw;" alt="">
+                            </div>
+                            <div style="padding-top: 3vh;">
+                                <span class="fw-bold text-center sm-text">Pengwyn</span><br>
+                                <span class="fw-bold text-center sm-text">Expenditure Module</span><br>
+                                <p class="m-0" style="padding-top: 2vh;">The Pengwyn Expenditure Module is planned
+                                    to
+                                    enhance
+                                    transparency by providing a visual
+                                    representation of the company's expenditures and liabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" style="padding-left: .7vw;">
+                        <div class="box-2 box sm-mt-5 text-center"
+                            style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1);  padding-top: 4vh;">
+                            <div class="mx-auto"
+                                style="background-color: rgba(147, 147, 147, 0.1); border: 1px solid rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                <img src="assets/images/blockchain-icon.svg" class="img-h" style="height: 3vw;"
+                                    alt="">
+                            </div>
+                            <div style="padding-top: 3vh;">
+                                <span class="fw-bold text-center sm-text">Pengwyn</span><br>
+                                <span class="fw-bold text-center sm-text">BINC Node</span><br>
+                                <p class="m-0" style="padding-top: 2vh;">Pengwyn BINC Node is specifically planned
+                                    to
+                                    empower
+                                    Pengwyn BINC shareholders in making node decisions while ensuring the security
+                                    of
+                                    the ICON
+                                    Blockchain.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" style="padding-left: .7vw;">
+                        <div class="box-2 box sm-mt-5 text-center"
+                            style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1);  padding-top: 4vh;">
+                            <div class="mx-auto"
+                                style="background-color: rgba(147, 147, 147, 0.1);border: 1px solid rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                <img src="assets/images/discord-tools.png" class="img-h" style="height: 3vw;"
+                                    alt="">
+                            </div>
+                            <div style="padding-top: 3vh;">
+                                <span class="fw-bold text-center sm-text">Pengwyn</span><br>
+                                <span class="fw-bold text-center sm-text">Discord BOT</span><br>
+                                <p class="m-0" style="padding-top: 2vh;">Pengwyn Discord BOT is planned to be
+                                    implemented within
+                                    the Pengwyn BINC Discord Server to automate role assignments for holders who own
+                                    different
+                                    types of NFTs and traits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" style="padding-left: .7vw;">
+                        <div class="box-2 box sm-mt-5 text-center"
+                            style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1);  padding-top: 4vh;">
+                            <div class="mx-auto"
+                                style="background-color: rgba(147, 147, 147, 0.1);border: 1px solid rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                <img src="assets/images/monitor-icon.svg" class="img-h" style="height: 3vw;" alt="">
+                            </div>
+                            <div style="padding-top: 3vh;">
+                                <span class="fw-bold text-center sm-text">Pengwyn</span><br>
+                                <span class="fw-bold text-center sm-text">Management Module</span><br>
+                                <p class="m-0" style="padding-top: 2vh;">Pengwyn Management Module is a company
+                                    interface that
+                                    is designed to provide management solutions for project managers on blockchain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 d-flex gap-1vw mx-auto" style="margin-top: 5vh;">
+                    <div class="row">
+                        <div class="col-4" style="padding-left: .7vw;">
+                            <div class="box-2 box sm-mt-5 text-center"
+                                style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1);  padding-top: 4vh;">
+                                <div class="mx-auto"
+                                    style="background-color: rgba(147, 147, 147, 0.1); border: 1px solid rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                    <img src="assets/images/pengwyn-brands.png" class="img-h" style="height: 3vw;"
+                                        alt="">
+                                </div>
+                                <div style="padding-top: 3vh;">
+                                    <span class="fw-bold text-center sm-text">Pengwyn</span><br>
+                                    <span class="fw-bold text-center sm-text">Brands</span><br>
+                                    <p class="m-0" style="padding-top: 2vh;">Pengwyn Brands refers to a business
+                                        initiative
+                                        program
+                                        that empowers owners of Pengwyn BINC NFT holders to establish their own
+                                        businesses
+                                        on
+                                        blockchain.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4" style="padding-left: .7vw;">
+                            <div class="box-2 box sm-mt-5 text-center"
+                                style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1);  padding-top: 4vh;">
+                                <div class="mx-auto"
+                                    style="background-color: rgba(147, 147, 147, 0.1); border: 1px solid rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                    <img src="assets/images/innovation-icon.svg" class="img-h" style="height: 3vw;"
+                                        alt="">
+                                </div>
+                                <div style="padding-top: 3vh;">
+                                    <span class="fw-bold text-center sm-text">Pengwyn</span><br>
+                                    <span class="fw-bold text-center sm-text">Innovation HUB</span><br>
+                                    <p class="m-0" style="padding-top: 2vh;">Pengwyn Innovation HUB is a platform
+                                        that
+                                        connects
+                                        different stakeholders of blockchain, including developers, auditors,
+                                        entrepreneurs,
+                                        and
+                                        investors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4" style="padding-left: .7vw;">
+                            <div class="box-2 box sm-mt-5 text-center"
+                                style=" border-radius: .8vw; padding: 3vh; border: 1px solid rgba(147, 147, 147, 0.1);  padding-top: 4vh;">
+                                <div class="mx-auto"
+                                    style="background-color: rgba(147, 147, 147, 0.1); border: 1px solid rgba(147, 147, 147, 0.1); border-radius: .8vw; width: 6vw; padding: 1vw;">
+                                    <img src="assets/images/rocket-icon.svg" class="img-h" style="height: 3vw;"
+                                        alt="">
+                                </div>
+                                <div style="padding-top: 3vh;">
+                                    <span class="fw-bold text-center sm-text">Pengwyn BINC</span><br>
+                                    <span class="fw-bold text-center sm-text">Launchpad</span><br>
+                                    <p class="m-0" style="padding-top: 2vh;">Pengwyn BINC Launchpad is a planned
+                                        all-in-one
+                                        toolkit
+                                        for entrepreneurs to create their own blockchain businesses from scratch.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

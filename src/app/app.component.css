@@ -1,0 +1,5 @@
+@media (width < 391px){
+    .sm-ms-3vh{
+        margin-left: 3vh !important;
+    }
+}

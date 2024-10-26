@@ -1,0 +1,384 @@
+@media (width=3860px) {
+    .mbs-mt-14vh {
+        margin-top: 14vh !important;
+    }
+
+    .right-10vw {
+        right: 10vw !important;
+        top: 2.5vw !important;
+    }
+
+    .top-2 {
+        top: 2.5vw !important;
+    }
+
+    .top-7 {
+        top: 7vh !important;
+    }
+}
+
+.text-size-h6 h1 {
+    font-size: 4vw !important;
+}
+
+.text-size-h6 h6 {
+    font-size: 1vw !important;
+}
+
+.gap-2vw {
+    margin-right: 2vw !important;
+}
+
+.box-1 {
+    border-radius: .7vw;
+    background-color: rgba(147, 147, 147, 0.1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+    padding: 4vh 2vh;
+}
+
+.btn-Primary-Orange {
+    color: var(--jet-black);
+    background-color: var(--primary-orange);
+    font-size: .9vw;
+    padding: 0.4vw 2vh !important;
+    border-radius: 0.6vw;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    border: 1px solid rgba(147, 147, 147, 0.1);
+}
+
+.nft-box {
+    border-radius: .7vw;
+    background-color: rgba(147, 147, 147, 0.1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+    padding: 4vh 2vh;
+}
+
+.nft-box2 {
+    border-radius: .7vw;
+    background-color: rgba(147, 147, 147, 0.1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+    padding: 4vh 2vh;
+}
+
+
+span {
+    color: rgba(154, 154, 154, 1);
+}
+
+.nft-rect {
+    border-radius: 0.7vw;
+    background-color: rgba(3, 3, 4, 1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+    padding: 2vh;
+}
+
+.nft-rect2 {
+    border-radius: 0.7vw;
+    background-color: rgba(3, 3, 4, 1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+    padding: 2vh;
+}
+
+.line1 {
+    position: absolute;
+    width: 25%;
+    height: 0vh;
+    border-bottom: 1px dashed #F4BB03;
+    border-left: 1px dashed #F4BB03;
+    padding: 0.9vw;
+}
+
+
+.line2 {
+    position: absolute;
+    width: 21.2vw;
+    height: 0vh;
+    border-top: 1px dashed #F4BB03;
+    border-left: 1px dashed #F4BB03;
+    padding: 1.1vw;
+}
+
+.img-box {
+    border-radius: .7vw;
+    background-color: rgba(147, 147, 147, 0.1);
+    border: 1px solid rgba(147, 147, 147, 0.1);
+}
+
+.box-active {
+    border: .2vw dotted #F4BB03 !important;
+    box-shadow: 0px 12px 40px 7px rgba(244, 187, 3, 0.25);
+    backdrop-filter: blur(12.5px);
+}
+
+
+@media (width < 822px) {
+    .pd-sd {
+        padding-right: 0vh !important;
+    }
+
+    .btn-outline {
+        color: var(--primary-orange);
+        border-radius: 2vw !important;
+        border: 0.14vw solid var(--primary-orange);
+        font-size: 3vw !important;
+        padding: 1.5vh !important;
+        font-family: 'Gilroy';
+        font-weight: 600;
+    }
+
+    .nft-box>h5 {
+        font-size: 4vw !important;
+    }
+
+    .text-size-h6 h1 {
+        font-size: 8vw !important;
+    }
+
+    .sm-mt--10 {
+        margin-top: -10vh !important;
+    }
+
+    .box-active {
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+    }
+
+    .w-48 {
+        width: 47% !important;
+    }
+
+    .sm-w-100 {
+        width: 50% !important;
+    }
+
+    .sm-w-2 {
+        width: 100% !important;
+        padding: 3vw 14vw !important;
+    }
+
+    .btn-Primary-Orange {
+        color: var(--jet-black);
+        background-color: var(--primary-orange);
+        font-size: .9vw;
+        padding: 1.5vh !important;
+        border-radius: 0.6vw;
+        font-family: 'Gilroy';
+        font-weight: 600;
+        border: 1px solid rgba(147, 147, 147, 0.1);
+    }
+
+    .sm-mt-2 {
+        margin-top: 2vh !important;
+    }
+
+    .sm-p-1 {
+        padding: 1vw 2vw !important;
+    }
+
+    .sm-mt-0 {
+        margin-top: 0 !important;
+    }
+
+    .sm-ms-1 {
+        margin-right: 2vw !important;
+    }
+
+    .sm-d-grid {
+        display: grid !important;
+    }
+
+    .col-5 button {
+        width: 34vw !important;
+    }
+
+    .text-size-h6 h6 {
+        font-size: 3vw !important;
+    }
+
+    .gap-1vw h6 {
+        font-size: 3vw !important;
+    }
+
+    .sm-mt--5 {
+        margin-top: -5vh !important;
+    }
+
+    .sm-mt-5 {
+        margin-top: 5vh !important;
+    }
+
+    .sm-mt-10 {
+        margin-top: 10vh !important;
+    }
+
+    .sm-m-top {
+        margin-top: 2vh !important;
+    }
+
+    .sm-grid {
+        display: grid !important;
+    }
+
+    .sm-pt-5 {
+        padding-top: 5vh !important;
+    }
+
+    .sm-mx-auto h3 {
+        font-size: 7vw !important;
+    }
+
+
+    .sm-mx-auto span {
+        font-size: 4vw !important;
+    }
+
+    .sm-t-center {
+        text-align: center !important;
+    }
+
+    .sm-ms {
+        margin-left: 1.5vh !important;
+    }
+
+    /* .sm-mx-auto {
+        margin-left: 5vh;
+    } */
+
+    .sm-top-padding {
+        padding-top: 10vh !important;
+    }
+
+    .box-1 {
+        border-radius: 2vw;
+        background-color: rgba(147, 147, 147, 0.1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+        padding: 4vh 2vh;
+    }
+
+    .sm-me-0 {
+        right: -3vh !important;
+    }
+
+    .sm-pt-10 {
+        margin-top: 10vh !important;
+    }
+
+    .sm-mt-15 {
+        margin-top: -20vw !important;
+    }
+
+    .sm-mt-20 {
+        margin-top: 15vw !important;
+    }
+
+    .sm-img-h {
+        height: 80vw !important;
+        right: 0vh !important;
+    }
+
+    .sm-text-3 {
+        font-size: 2.9vw !important;
+    }
+
+    .nft-box2 h5 {
+        font-size: 4vw !important;
+    }
+
+    .nft-rect2 span {
+        font-size: 3vw !important;
+    }
+
+    .nft-rect {
+        border-radius: 2vw !important;
+        background-color: rgba(3, 3, 4, 1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+        padding: 2vh;
+    }
+
+    .img-box {
+        border-radius: 4vw !important;
+        background-color: rgba(147, 147, 147, 0.1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+    }
+
+    .box-1>h6 {
+        font-size: 4vw !important;
+    }
+
+    .sm-box-1 {
+        border-radius: 2vw;
+        background-color: rgba(147, 147, 147, 0.1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+        padding: 4vh 2vh;
+    }
+
+    .nft-box h6 {
+        font-size: 2vh !important;
+    }
+
+    .nft-rect span {
+        font-size: 3vw !important;
+    }
+
+    .sm-mt-14 {
+        margin-top: 20vw !important;
+    }
+
+    .sm-right-position {
+        right: 36vw;
+    }
+
+    .nft-box {
+        border-radius: 3vw;
+        background-color: rgba(147, 147, 147, 0.1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+        padding: 4vh 2vh;
+    }
+
+    .nft-box2 {
+        border-radius: 3vw;
+        background-color: rgba(147, 147, 147, 0.1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+        padding: 4vh 2vh;
+    }
+
+    .sm-mt-60 {
+        margin-top: 70vh !important;
+    }
+
+
+    .nft-rect {
+        border-radius: 2vw;
+        background-color: rgba(3, 3, 4, 1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+        padding: 2vh;
+    }
+
+    .sm-img-h82 {
+        height: 82vw !important;
+    }
+
+    .sm-img-h77 {
+        height: 77vw !important;
+    }
+
+    .sm-mt-140 {
+        margin-top: 140vw !important;
+    }
+
+    .nft-rect2 {
+        border-radius: 2vw;
+        background-color: rgba(3, 3, 4, 1);
+        border: 1px solid rgba(147, 147, 147, 0.1);
+        padding: 2vh;
+    }
+}
+
+@media (width > 822px) {
+    .pd-md {
+        padding-left: 0vh !important;
+        padding-right: 5vh !important;
+    }
+}

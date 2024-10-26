@@ -1,0 +1,116 @@
+.header {
+    border-bottom: 1px solid rgba(129, 129, 129, 0.25);
+}
+
+.chips>div {
+    border: 1px solid rgba(244, 187, 3, 0.25);
+    border-radius: 5vh;
+    min-width: 6vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vh !important;
+    padding-right: 2vh !important;
+}
+
+.accordion {
+    max-height: 100vh;
+}
+
+.accordion-button {
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    background-image: url(/assets/images/plus-icon.svg) !important;
+    background-size: contain;
+    width: 1vw;
+    height: 2vh;
+}
+
+.accordion-collapse {
+    border-bottom: 1px solid rgba(129, 129, 129, 0.25) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/assets/images/minus-icon.svg) !important;
+    background-size: contain;
+    width: 1vw;
+    height: .5vh;
+}
+
+@media (width < 822px) {
+    .accordion-button::after {
+        background-image: url(/assets/images/plus-icon.svg) !important;
+        background-size: contain;
+        width: 4vw;
+        height: 2vh;
+        margin-right: -3vh !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url(/assets/images/minus-icon.svg) !important;
+        background-size: contain;
+        width: 4vw;
+        margin-right: -3vh !important;
+    }
+
+    .filter {
+        left: 0 !important;
+        top: 0 !important;
+        padding: 3vh;
+        z-index: 11000000 !important;
+        width: 100% !important;
+        height: 100vh !important;
+        background-color: black !important;
+        overflow: auto;
+    }
+
+    .filter-box {
+        width: 40vw !important;
+        border-radius: 2vw;
+        height: auto;
+        padding: 2vw 10vw;
+        background-color: rgba(147, 147, 147, 0.1);
+        z-index: 11000000 !important;
+    }
+
+    .sm-t-h6 {
+        font-size: 4vh !important;
+    }
+
+}
+
+.form-check-label {
+    font-size: 1.8vh !important;
+}
+
+.form-check-input:checked {
+    background-color: rgba(244, 187, 3, 1) !important;
+    border-color: rgba(244, 187, 3, 0.25) !important;
+    box-shadow: none !important;
+}
+
+.form-check-input {
+    background-color: transparent !important;
+    border-color: rgba(244, 187, 3, 0.25) !important;
+    box-shadow: none !important;
+    height: 2vh;
+    width: 2vh;
+    border-radius: .5vh;
+    margin-right: 1vh !important;
+}
+
+
+.form-check-label {
+    font-size: 0.8vw;
+}
+
+@media (width > 1080px) {
+    /* .form-check-label {
+        font-size: 1vw !important;
+    } */
+
+    .accordion-header {
+        font-size: 1.2vw !important;
+    }
+}

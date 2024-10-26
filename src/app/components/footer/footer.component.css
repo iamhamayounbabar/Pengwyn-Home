@@ -1,0 +1,172 @@
+@media (width < 822px) {
+    h3 {
+        font-size: 3vh !important;
+    }
+
+    .sm-mt-0 {
+        margin-top: 0 !important;
+    }
+
+    .sm-col-reverse {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .sm-pt-5 {
+        padding-top: 5vh !important;
+    }
+
+    .sm-text-center {
+        text-align: center !important;
+    }
+
+    small {
+        font-size: 2vh !important;
+    }
+
+    .sm-center-img {
+        margin-left: 16vw !important;
+    }
+
+    h6 {
+        font-size: 3vh !important;
+    }
+
+    .sm-mx-auto {
+        margin-left: 5vw !important;
+    }
+}
+
+.width {
+    width: 40vh !important; /* Set the desired custom width */
+    /* Add any additional styles as needed */
+  }
+
+  .circle-container {
+    display: flex;
+    height: 11.2vw;
+  }
+  
+  .circle {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 50%;
+    background-color: rgba(147, 147, 147, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vw solid #9393931A;
+    
+  }
+  
+  .circle:hover{
+    border: .2vw dotted #F4BB03;
+    cursor: pointer;
+  }
+  
+  .circle:hover .inner-circle {
+    background-color: #F4BB03 !important;
+    color: black !important;
+    cursor: pointer;
+  }
+  
+  .inner-circle {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: rgba(147, 147, 147, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.1vw solid #9393931A;
+  
+  }
+  
+  .inner-circle h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .capsule-outer {
+    height: 21vh;
+    border-radius: 10vh;
+    background-color: rgba(147, 147, 147, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vw solid #9393931A;
+  
+  }
+  
+  .capsule-inner {
+    height: 18vh;
+    width: 36vw;
+    border-radius: 10vh;
+    /* Adjust the values to modify the shape */
+    background-color: rgba(147, 147, 147, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vw solid #9393931A;
+  }
+
+  .question-mark {
+      background-image: url('/assets/images/partner-img-4.png');
+  }
+
+  .question:hover {
+      background: url('http://dummyimage.com/100x100/eb00eb/fff');
+  }
+  
+  
+
+
+  @media (width < 822px) {
+
+    .capsule-outer {
+      width: 80vw;
+      height: 10vh;
+      border-radius: 10vh;
+      background-color: rgba(147, 147, 147, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh !important;
+    }
+  
+    .capsule-inner {
+      height: 8vh;
+      width: 75vw;
+      border-radius: 10vh;
+      background-color: rgba(147, 147, 147, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .capsule-outer-lg {
+      width: 80vw;
+      height: 18vh;
+      border-radius: 10vh;
+      background-color: rgba(147, 147, 147, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10vh !important;
+      margin-bottom: 10vh !important;
+    }
+  
+    .capsule-inner-lg {
+      height: 15vh;
+      width: 75vw;
+      border-radius: 10vh;
+      background-color: rgba(147, 147, 147, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }

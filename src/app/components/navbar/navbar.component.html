@@ -1,0 +1,116 @@
+  <div class="row">
+    <div class="col-md-11 mx-auto">
+      <nav class="navbar navbar-expand-lg" style="padding-top: 3vh;">
+        <div class="container-fluid">
+          <div class="bg-circle position-absolute d-none d-md-block" style="bottom: 0; left: 0vh;"></div>
+          <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: 0; left: 4vh;"></div>
+          <a class="navbar-brand text-white" href="/"><img src="assets/images/nav-logo.svg" style="height: 8vh;" alt=""></a>
+          <button class="navbar-toggler position-relative" type="button">
+            <img src="assets/images/menu-icon.svg" (click)="open()" style="margin-right: -3vh;" alt="">
+          </button>
+          <div class="position-fixed menu" style="top: 0; left: 0" *ngIf="show">
+            <div class="d-flex justify-content-between position-relative" style="margin-top: 2vh;">
+              <img src="assets/images/nav-logo.svg" alt="">
+              <img src="assets/images/logo.svg" class="position-absolute sm-logo-height"
+                style="height: 18vh; top: -5.8vh; left: 56vw;" alt="">
+              <img src="assets/images/cross-icon.svg" (click)="close()" alt="">
+              <div class="bg-sm-circle position-absolute d-block d-md-none" style="top: -2vh; left: 2vh;"></div>
+            </div>
+            <div style=" margin-top: 5vh;">
+              <div style="margin-top: 2vh;">
+                <a (click)="close()" routerLink="/home" routerLinkActive="active" class=" text-secondary text-hover"
+                  style="text-decoration: none; font-size: 4vw !important;" aria-current="page">
+                  Home<span [class.active-indicator]="isActive('/home')"></span>
+                </a>
+              </div>
+              <div style="margin-top: 2vh;">
+                <a (click)="close()" routerLink="/tools" routerLinkActive="active" class=" text-secondary text-hover"
+                  style="text-decoration: none; font-size: 4vw !important;">
+                  Tools<span [class.active-indicator]="isActive('/tools')"></span>
+                </a>
+              </div>
+              <div style="margin-top: 2vh;"> <!---->
+                <a (click)="close()" routerLink="/collections" routerLinkActive="active" class=" text-secondary text-hover"
+                  style="text-decoration: none; font-size: 4vw !important;">
+                  Collections<span [class.active-indicator]="isActive('/collections')"></span>
+                </a>
+              </div>
+              <div style="margin-top: 2vh;"> <!--(click)="close()" routerLink="/rarity" routerLinkActive="active"-->
+                <a  class=" text-secondary text-hover"
+                  style="text-decoration: none; font-size: 4vw !important; cursor: not-allowed !important;">
+                  Rarity<span [class.active-indicator]="isActive('/rarity')"></span>
+                </a>
+              </div>     
+              <div style="margin-top: 2vh;">
+                <a (click)="close()" href="https://pengwyn-binc.gitbook.io/pengwyn-binc-white-paper/pengwyn-binc-white-paper/what-is-pengwyn-binc" target="_blank" routerLinkActive="active" class="text-secondary text-hover"
+                  style="text-decoration: none; font-size: 4vw !important;" target="_blank">
+                  Whitepaper
+                </a>
+              </div>
+              <div class="bg-sm-circle position-absolute d-block d-md-none" style="bottom: 30vh; right: 2vh;"></div>
+            </div>
+            <div class="row">
+              <div class="col-12 position-absolute" style="bottom: 100px; left: 0;">
+                <div class="row">
+                  <div class="col-10 mx-auto d-flex justify-content-between">
+                    <img src="assets/images/footer-discode-icon.svg" style="height: 7vh;" class="pointer" alt="">
+                    <img src="assets/images/footer-send-icon.svg" style="height: 7vh;" class="pointer" alt="">
+                    <img src="assets/images/footer-icon.svg" style="height: 7vh;" class="pointer" alt="">
+                    <img src="assets/images/footer-twitter-icon.svg" style="height: 7vh;" class="pointer" alt="">
+                  </div>
+                  <div class="col-11 mx-auto" style="margin-top: 3vh;">
+                    <button class="btn btn-outline w-100" style="height: 50px;">Go to app</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-md-flex gap-2vw" style="margin-left: 2vw;">
+              <li class="nav-item">
+                <a routerLink="/home" routerLinkActive="active" class=" text-secondary text-hover" style="text-decoration: none;"
+                  aria-current="page">
+                  Home<span class="indicator" [class.active-indicator]="isActive('/home')"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/tools" routerLinkActive="active" class=" text-secondary text-hover"
+                  style="text-decoration: none;">
+                  Tools<span class="indicator" [class.active-indicator]="isActive('/tools')"></span>
+                </a>
+              </li>
+              <li class="nav-item"> <!-- -->
+                <a routerLink="/collections" routerLinkActive="active" class=" text-secondary text-hover"
+                  style="text-decoration: none;">
+                  Collections<span class="indicator" [class.active-indicator]="isActive('/collections')"></span>
+                </a>
+              </li>
+              <li class="nav-item"> <!--<a routerLink="/rarity" routerLinkActive="active"  -->
+                <a class="text-secondary text-hover"
+                  style="text-decoration: none; cursor: not-allowed !important;">
+                  Rarity<span class="indicator" [class.active-indicator]="isActive('/rarity')"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://pengwyn-binc.gitbook.io/pengwyn-binc-white-paper/pengwyn-binc-white-paper/what-is-pengwyn-binc" routerLinkActive="active" class="text-secondary text-hover"
+                  style="text-decoration: none;" target="_blank">
+                  Whitepaper<span class="indicator"></span>
+                </a>
+              </li>
+            </ul>
+      
+            <span class="btn btn-outline" style="cursor: not-allowed;">Go to app</span>
+          </div>
+      
+          <div class="position-absolute sm-right" style="right: 13vw; top: 0;" *ngIf="isHomePage && !isRarity && !isDetails">
+            <img src="assets/images/logo.svg" class="sm-logo-height logo-height sm-set-logo" style="height: 60vh;" alt="">
+          </div>
+          <div class="position-absolute sm-right" style="right: 14vw; top: 0;" *ngIf="!isHomePage && !isRarity && !isDetails">
+            <img src="assets/images/logo.svg" class="sm-logo-height sm-set-logo" style="height: 30vh;" alt="">
+          </div>
+      
+        </div>
+      </nav>
+    </div>
+  </div>
